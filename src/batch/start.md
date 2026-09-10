@@ -9,22 +9,10 @@ Der start-Befehl wird gemäß der folgenden Syntax ausgeführt:
 
 ## Häufig genutzte Optionen
 
-<table>
-	<thead>
-		<th>Option</th>
-		<th>Bedeutung</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td>`/B`</td>
-			<td>Erzeugt kein neues Fenster (Anwendung wird im selben Fenster gestartet).</td>
-	</tr>
-	<tr>
-			<td>`/W` oder `/WAIT`</td>
-			<td>Wartet auf das Ende der Anwendung, bevor forgefahren wird.</td>
-	</tr>
-	</tbody>
-</table>
+| Option | Bedeutung |
+|---|---|
+| `/B` | Erzeugt kein neues Fenster (Anwendung wird im selben Fenster gestartet). |
+| `/W` oder `/WAIT` | Wartet auf das Ende der Anwendung, bevor forgefahren wird. |
 
 ## Beispiele
 

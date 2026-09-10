@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug-md2html",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/tool/md2html/src/main.py",
+      "args": [
+        "${workspaceFolder}/src/batch/start.md",
+        "${workspaceFolder}/src/batch/tmp-start2.html"
+      ],
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/tool/md2html/src"
+      }
+    }
+  ]
+}

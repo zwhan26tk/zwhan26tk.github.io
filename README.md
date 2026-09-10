@@ -1,3 +1,4 @@
 # Notizen beim Programmieren
 
-Notes on IT technology
+Hier sind die Notizen beim Programmieren.
+
