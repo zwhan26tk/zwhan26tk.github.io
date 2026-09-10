@@ -1,2 +1,3 @@
-# zwhan26tk.github.io
-IT-related technology notes
+# Notizen beim Programmieren
+
+Notes on IT technology

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>start</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../common.css" />
+</head>
+<body>
+<h1 id="der-start-befehl-in-der-batch-programmierung">Der Start-Befehl
+in der Batch-Programmierung</h1>
+<h2 id="syntax">Syntax</h2>
+<p>Der start-Befehl wird gemäß der folgenden Syntax ausgeführt:</p>
+<pre><code>start &quot;Titel&quot; [/d Arbeitsverzeichnis] [Optionen]  &quot;Befehl&quot; [Argumente]</code></pre>
+<h2 id="häufig-genutzte-optionen">Häufig genutzte Optionen</h2>
+<table>
+<thead>
+<th>
+Option
+</th>
+<th>
+Bedeutung
+</th>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>/B</code>
+</td>
+<td>
+Erzeugt kein neues Fenster (Anwendung wird im selben Fenster gestartet).
+</td>
+</tr>
+<tr>
+<td>
+<code>/W</code> oder <code>/WAIT</code>
+</td>
+<td>
+Wartet auf das Ende der Anwendung, bevor forgefahren wird.
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="beispiele">Beispiele</h2>
+<p>Einen Tomcat-Server starten:</p>
+<pre><code>start &quot;tomcat-server&quot; ^
+    /D D:\run\web\server\tomcat ^
+    D:\app\apache\tomcat\v9.0.37\bin\startup.bat</code></pre>
+<p>Einen Apache-HTTPD-Server starten:</p>
+<pre><code>start &quot;apache-httpd-server&quot;  ^
+    /D D:\run\web\server\httpd  ^
+    D:\app\apache\httpd\v2.4.41\bin\httpd.exe</code></pre>
+<h2 id="referenz">Referenz</h2>
+<p><a href="https://ss64.com/nt/start.html" target="_blank">Der
+Start-Befehl auf ss64.com</a></p>
+</body>
+</html>
